@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holdup"
+version = "0.1.0"
+description = "A CLI tool that monitors stock tickers and explains what's happening in plain English"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "alpaca-py>=0.21.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "click>=8.0.0",
+]
+
+[project.scripts]
+holdup = "holdup.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
