@@ -1,5 +1,9 @@
 # holdup - Future Plans
 
+## Issues
+1. The news currently crawled from alpaca is not sufficient so need more crawlers.
+2. Need a more methodological way to generate the summary, seems like the LLM is getting confused between news coming from different times.
+
 ## 1. More Data Sources
 
 Add crawlers for:
